@@ -1,0 +1,33 @@
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart
+pydantic>=2.0
+python-dotenv
+
+# LangChain - Compatible versions (langchain-core must be >=0.1.52 for langchain-community 0.0.38)
+langchain==0.1.20
+langchain-community==0.0.38
+langchain-core==0.1.52
+langchain-text-splitters
+
+# Embeddings
+sentence-transformers==2.7.0
+
+# Vector DB (LOCAL - ChromaDB, simple and local!)
+chromadb>=0.4.0
+
+# Document Parsing
+PyPDF2==3.0.1
+python-docx==0.8.11
+pdfplumber==0.10.1
+
+# Tokenization (Python 3.12 compatible)
+tiktoken==0.6.0
+
+# Compatible with Python 3.12
+numpy==1.26.4
+
+# Development
+pytest
+pytest-asyncio
+black

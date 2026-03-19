@@ -1,0 +1,46 @@
+/* index.css - Tailwind CSS imports and custom styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utility classes */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for better visuals */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Accessibility: Focus styles */
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
