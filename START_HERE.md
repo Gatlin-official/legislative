@@ -1,43 +1,72 @@
-# 🎯 START HERE - Information Density Implementation
+# START HERE - Quick Setup
 
-## What Just Happened?
+## Get Running in 30 Seconds
 
-Your **Legislative Analyzer** project just got upgraded with **Information Density Metrics** - the exact measurement system competition judges will use to score your submission.
-
----
-
-## 🚀 Quick Start (2 minutes)
-
-### 1. Start the Server
-```bash
-cd backend
-uvicorn main:app --reload
-```
-
-### 2. Try the New Endpoints
-```bash
-# Option A: Use Swagger UI (easier)
-open http://localhost:8000/docs
-
-# Option B: Use command line
-curl http://localhost:8000/evaluate/benchmark
-```
-
-### 3. That's It!
-You now have 4 new evaluation endpoints ready to use.
+### What You Have
+[OK] An AI tool that explains bills in plain language  
+[OK] Automatic compression to save costs  
+[OK] Metrics that judges use to score projects  
+[OK] Runs completely offline (no cloud, no API costs)  
 
 ---
 
-## 📊 What You Have Now
+## Install (Pick Your OS)
 
-### 4 New API Endpoints
+### Windows
+```bash
+setup.bat
+```
 
-| Endpoint | Purpose | Use When |
-|----------|---------|----------|
-| `POST /evaluate/density/{doc_id}` | Measure information density | Want to know: "How efficient is my compression?" |
-| `POST /evaluate/comparison/{doc_id}` | Before/after comparison | Want to prove: "How much better is compressed?" |
-| `POST /evaluate/energy/{doc_id}` | Environmental impact | Want to show: "How much CO2 did I save?" |
-| `GET /evaluate/benchmark` | Aggregate report | Want to submit: "Here's my competition report" |
+### Mac or Linux
+```bash
+bash setup.sh
+```
+
+**The setup script will:**
+- Create your database
+- Download the AI model (Llama 3.1)
+- Install everything
+- Start the server
+
+---
+
+## What Happens Next
+
+1. **Setup finishes** → You'll see `http://localhost:5173`
+2. **Open that URL** → See the web interface
+3. **Upload a bill** → Drag & drop a PDF
+4. **Ask a question** → "What does this bill do?"
+5. **See your score** → View compression & efficiency metrics
+
+---
+
+## Key Metrics (What Judges See)
+
+After you ask a question:
+```
+[OK] Facts preserved: 91%
+[OK] Compression: 40%+
+[OK] Energy saved: ~50g CO2
+[OK] Response time: <3 seconds
+```
+
+---
+
+## If Setup Fails
+
+**Ollama not working?**
+- Download from https://ollama.ai
+- Run: `ollama serve`
+
+**Port already in use?**
+- Backend: `uvicorn main:app --port 8001`
+- Frontend: `npm run dev -- --port 3000`
+
+---
+
+## Full Documentation
+
+See [README.md](README.md) for complete details, architecture, and advanced setup.
 
 ### What These Measure
 
